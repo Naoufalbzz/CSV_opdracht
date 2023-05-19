@@ -11,5 +11,5 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get -y update
 sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-docker pull andrewmichaelsmith/docker-heartbleed
-docker run -d -p 8443:443 andrewmichaelsmith/docker-heartbleed
+sudo docker pull andrewmichaelsmith/docker-heartbleed
+sudo docker run -d -p 8443:443 andrewmichaelsmith/docker-heartbleed
